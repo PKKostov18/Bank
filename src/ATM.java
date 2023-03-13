@@ -1,10 +1,13 @@
-import java.util.concurrent.TransferQueue;
 
-public class ATM {
+public class ATM extends Bank{
 
     private int atmId;
     private Transaction transaction;
     private String location;
+
+    public ATM(int bankId, String location, String bankName) {
+        super(bankId, location, bankName);
+    }
 
     public void changePassword() {
     }

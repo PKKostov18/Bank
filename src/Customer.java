@@ -1,4 +1,4 @@
-public class Customer {
+public class Customer extends ATM{
 
     private int customerId;
     private Card card;
@@ -8,6 +8,10 @@ public class Customer {
     private String address;
     private String email;
     private int password;
+
+    public Customer(int bankId, String location, String bankName) {
+        super(bankId, location, bankName);
+    }
 
     public void verifyEmail() {
     }
